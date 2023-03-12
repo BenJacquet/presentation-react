@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import ItemIMG from '../../images/image-product-1-thumbnail.jpg'
+import ItemIMG from '../../../images/image-product-1-thumbnail.jpg'
+import './CartItem.css'
 
 function CartItem() {
     const [items,setItems] = useState([{

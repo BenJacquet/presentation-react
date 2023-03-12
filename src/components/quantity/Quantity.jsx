@@ -2,6 +2,7 @@ import React from 'react'
 import './Quantity.css'
 import minus from '../../../images/icon-minus.svg';
 import plus from '../../../images/icon-plus.svg';
+import cartIcon from '../../../images/icon-cart-white.svg';
 
 const Quantity = () => {
   function handleDecreaseQuantity() {
@@ -18,8 +19,7 @@ const Quantity = () => {
 
   return (
     <div className='quantity-container'>
-      <div className='quantity-bar-container'>
-        <p className='quantity-bar'>
+        <div className='quantity'>
           <button onClick={handleDecreaseQuantity} className='minus'>
             <img src={minus} alt="minus" />
           </button>
@@ -29,13 +29,11 @@ const Quantity = () => {
           <button onClick={handleIncreaseQuantity} className='plus'>
             <img src={plus} alt="plus" />
           </button>
-        </p>
-      </div>
-      <div className='add-to-cart-container'>
+        </div>
         <button type='button' className='add-to-cart-button' onClick={handleAddToCart}>
+          <img src={cartIcon} alt="cart icon" />
           Add to cart
         </button>
-      </div>
     </div>
   )
 }

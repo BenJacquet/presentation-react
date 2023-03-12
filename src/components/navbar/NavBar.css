@@ -1,0 +1,33 @@
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navigation-container a{
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.navigation-container .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -16px;
+}
+
+.cart-icon {
+    background-color: transparent;
+    background: none;
+}
+
+.avatar {
+    height: 64px;
+}

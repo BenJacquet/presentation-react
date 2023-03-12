@@ -8,7 +8,7 @@
     --color-dark-grayish-blue: hsl(219, 9%, 45%);
     --color-grayish-blue: hsl(220, 14%, 75%);
     --color-light-grayish-blue: hsl(223, 64%, 98%);
-    --color-white: hsl(0, 0%, 100%);
+    --color-white: #ffffff;
     --color-black: hsl(0, 0%, 0%);
     --color-black-lightbox: hsl(0, 0%, 0%, 75%);
 
@@ -20,4 +20,5 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: var(--font-weight-regular);
+    z-index: 1;
 }
