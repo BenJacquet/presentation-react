@@ -4,7 +4,12 @@
     gap: 12px;
 }
 
+.quantity-container button {
+    height: 3rem;
+}
+
 .quantity {
+    padding: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,4 +32,11 @@
     border-radius: 10px;
     background-color: var(--color-primary);
     font-weight: var(--font-weight-bold);
+}
+
+.add-to-cart-button span {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

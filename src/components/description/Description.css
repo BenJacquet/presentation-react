@@ -27,6 +27,7 @@
 
 .discounted-price {
     font-size: 2rem;
+    padding-right: 1rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -36,10 +37,12 @@
     width: max-content;
     height: max-content;
     border-radius: 4px;
+    
     gap: 12px;
 }
 
 .discount-percent {
+    display: flex;
     font-size: 1rem;
     padding-left: 6px;
     padding-right: 6px;
@@ -47,6 +50,7 @@
 }
 
 .retail-price {
+    padding-bottom: 2rem;
     font-size: 0.85rem;
     color: var(--color-grayish-blue);
     font-weight: var(--font-weight-bold);

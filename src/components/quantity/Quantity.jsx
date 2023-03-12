@@ -11,19 +11,21 @@ const Quantity = ({shoppingCart, setShoppingCart}) => {
 
   function handleDecreaseQuantity() {
     if (itemQuantity > 0)
-      setItemQuantity(itemQuantity - 1);
+      setItemQuantity(itemQuantity => itemQuantity - 1);
   }
 
   function handleIncreaseQuantity() {
-    setItemQuantity(itemQuantity + 1);
+    setItemQuantity(itemQuantity => itemQuantity + 1);
   }
 
   function handleAddToCart() {
-    setShoppingCart([
-      shoppingCart.map( item => {
-        item.number += itemQuantity;
-      })
-    ]);
+    const updatedCart = shoppingCart.map(item => {
+        return {
+          ...item,
+          number: item.number + itemQuantity
+        };
+    });
+    setShoppingCart(updatedCart);
     setItemQuantity(0);
   }
 
@@ -41,8 +43,10 @@ const Quantity = ({shoppingCart, setShoppingCart}) => {
           </button>
         </div>
         <button className='add-to-cart-button' onClick={handleAddToCart}>
-          <img src={cartIcon} alt="cart icon" />
+          <span>
+            <img src={cartIcon} alt="cart icon" />
           Add to cart
+          </span>
         </button>
     </div>
   )
