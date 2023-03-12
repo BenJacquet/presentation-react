@@ -1,5 +1,5 @@
 .Slider {
-    max-width: 30%;
+    max-width: 35%;
     justify-content: center;
     align-items: center;
     background-color: #eee;
@@ -36,3 +36,22 @@
       .carousel.carousel-slider .control-arrow:hover {
         background: transparent; 
   }
+
+  .carousel .thumb.selected, .carousel .thumb:hover {
+    border: none; }
+
+    .carousel .thumb {
+
+      -webkit-transition: ease-in;
+      -moz-transition: ease-in;
+      -ms-transition: ease-in;
+      -o-transition: ease-in;
+      transition: ease-in;
+      display: inline-block flex;
+      margin-right: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      border: none;
+      justify-items:normal;
+      padding: 2px;
+    }
