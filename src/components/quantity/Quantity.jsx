@@ -4,7 +4,7 @@ import minus from '../../../images/icon-minus.svg';
 import plus from '../../../images/icon-plus.svg';
 import cartIcon from '../../../images/icon-cart-white.svg';
 
-const Quantity = () => {
+const Quantity = ({shoppingCart}) => {
   function handleDecreaseQuantity() {
     return (0);
   }
@@ -30,7 +30,7 @@ const Quantity = () => {
             <img src={plus} alt="plus" />
           </button>
         </div>
-        <button type='button' className='add-to-cart-button' onClick={handleAddToCart}>
+        <button className='add-to-cart-button' onClick={handleAddToCart}>
           <img src={cartIcon} alt="cart icon" />
           Add to cart
         </button>

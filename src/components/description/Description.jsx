@@ -3,7 +3,7 @@ import './Description.css'
 import React from 'react'
 import Quantity from '../quantity/Quantity'
 
-const Description = () => {
+const Description = ({shoppingCart, setShoppingCart}) => {
   return (
     <div>
       <div className='item-description-container'>
@@ -19,7 +19,7 @@ const Description = () => {
         </div>
         <s className='retail-price'>$250.00</s>
       </div>
-      <Quantity/>
+      <Quantity shoppingCart={shoppingCart} />
     </div>
   )
 }

@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import AvatarIcon from '../../IconComponents/AvatarIcon'
 import CartIcon from '../../IconComponents/CartIcon'
 import Avatar from "../../../images/Avatar.png"
-import Cart from '../cart/Cart'
+import CartItem from '../cartitem/CartItem'
 import './NavBar.css'
 
-const NavBar = () => {
-  const[cart,setCart] = useState(false)
+const NavBar = ({shoppingCart, setShoppingCart}) => {
+  const [cart, setCart] = useState(false);
   return (
     <div>
         <nav>
@@ -18,13 +18,13 @@ const NavBar = () => {
             <a href='#'>About</a>
             <a href='#'>Contact</a>
             <div className='menu-container'>
-              <CartIcon onSmash= {()=> setCart(!cart)}/> <span>1</span>
+              <CartIcon onSmash= {()=> setCart(!cart)}/> <span>{shoppingCart.length}</span>
               <img className='avatar' src={Avatar} alt="hello" />
             </div>
           </div>
         <hr />
         </nav>
-        {cart && <Cart />}
+        {cart && <CartItem shoppingCart={shoppingCart} />}
     </div>
   )
 }

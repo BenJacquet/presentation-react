@@ -1,38 +1,61 @@
 .Slider {
-    max-width: 30%;
-    justify-content: center;
-    align-items: center;
-    background-color: #eee;
-    height: 400px;
-    width: 100%;
-    border-radius: 12px;
-  }
-  
-  .Slider img {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    align-self: center;
-    border: none;
-    border-radius: 12px;
-  }
-  
-  .carousel .thumb.selected, .carousel .thumb:hover {
-    border: none; }
+  max-width: 35%;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+}
 
-  .carousel.carousel-slider {
-    position: relative;
-    margin: 0;
-    overflow: hidden; }
-    .carousel.carousel-slider .control-arrow {
-      top: 0;
-      color: #fff;
-      font-size: 26px;
-      bottom: 0;
-      margin-top: 0;
-      padding: 5px; }
-      .carousel.carousel-slider .control-arrow:hover {
-        background: transparent; 
+.Slider img {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  align-self: center;
+  border: none;
+  border-radius: 12px;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: none; }
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+  
+.carousel.carousel-slider .control-arrow {
+    top: 0;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  .carousel.carousel-slider .control-arrow:hover {
+    background: transparent; 
+  }
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border-radius: 12px;
+  transition: ease-in 0.1s;
+  transform: scale(1.1);
+  padding: -12px;
+  }
+
+  .carousel .thumb {
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
   }
