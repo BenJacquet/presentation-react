@@ -38,22 +38,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|jpg)$/i,
         use: [
           {
             loader: 'url-loader',
             options: {
               limit: 8192,
-            },
-          },
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images/'
+              outputPath: 'images/',
+              publicPath: '/images/'
             }
           }
-        ],
+        ]
       },
       {
         test: /\.css$/,
