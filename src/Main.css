@@ -22,3 +22,9 @@ body {
     font-weight: var(--font-weight-regular);
     z-index: 1;
 }
+
+.item-container {
+    display: flex;
+    gap: 10%;
+    margin-left: 15%;
+}

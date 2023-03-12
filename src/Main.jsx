@@ -8,8 +8,10 @@ const ProductPage = () => {
     return (
         <div>
             <NavBar />
-            <Carousel />
-            <Description/>
+            <div className="item-container">
+                <Carousel />
+                <Description/>
+            </div>
         </div>
     )
 }
