@@ -4,7 +4,7 @@ import CartItem from './CartItem'
 function Cart() {
   return (
     <div>
-        <div> Cart</div>
+        <div>Cart</div>
         <CartItem/>
     </div>
   )

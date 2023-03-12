@@ -7,7 +7,7 @@ const Description = () => {
   return (
     <div>
       <div className='item-description-container'>
-        <h3 className='item-brand'>Sneaker Company</h3>
+        <h3 className='item-brand'>SNEAKER COMPANY</h3>
         <h1 className='item-name'>Fall Limited Edition Sneakers</h1>
         <p className='item-description'>These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
