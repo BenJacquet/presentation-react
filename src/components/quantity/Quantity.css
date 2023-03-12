@@ -16,22 +16,54 @@
     background: none;
     border: none;
     gap: 32px;
+    margin-right: 12px;
+    width: 128px;
+    border-radius: 6px;
     background-color: var(--color-light-grayish-blue);
 }
 
 .minus, .amount, .plus {
+    border-radius: 6px;
+    background-color: var(--color-light-grayish-blue);
     align-self: center;
     justify-self: center;
     border: none;
+    transition: ease 0.1s;
+}
+
+.minus:hover, .amount:hover, .plus:hover {
+    background-color: var(--color-grayish-blue);
+}
+
+.minus:active, .amount:active, .plus:active {
+    background-color: var(--color-dark-grayish-blue);
+    box-shadow: inset 0px 5px 5px rgba(0,0,0,0.2);
 }
 
 .add-to-cart-button {
     display: flex;
     border: none;
+    width: 256px;
+    align-items: center;
+    justify-content: center;
     color: var(--color-white);
     border-radius: 10px;
     background-color: var(--color-primary);
     font-weight: var(--font-weight-bold);
+    transition: ease 0.1s;
+}
+.add-to-cart-button img {
+    margin-right: 16px;
+}
+
+
+.add-to-cart-button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.add-to-cart-button:active {
+    background-color: var(--color-primary);
+    box-shadow: inset 0px 5px 5px rgba(0,0,0,0.2);
 }
 
 .add-to-cart-button span {

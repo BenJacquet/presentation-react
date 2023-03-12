@@ -8,13 +8,13 @@ import ItemIMG from "../images/image-product-1-thumbnail.jpg"
 
 
 const ProductPage = () => {
-    const [shoppingCart, setShoppingCart] = useState([{
+    const [shoppingCart, setShoppingCart] = useState({
         itemId : 1,
         image : ItemIMG,
         name : 'Fall Limited Edition Sneakers',
         price : 125,
-        number : 1,
-    }])
+        number : 0,
+    })
 
     return (
         <div>
