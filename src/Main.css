@@ -2,6 +2,9 @@
 
 :root {
     --color-primary: hsl(26, 100%, 55%);
+    --color-primary-hover: hsl(33, 100%, 60%);
+    --color-primary-active: hsl(26, 96%, 38%);
+
     --color-primary-variant: hsl(25, 100%, 94%);
 
     --color-dark-blue: hsl(220, 13%, 13%);

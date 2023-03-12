@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import ItemIMG from '../../../images/image-product-1-thumbnail.jpg'
 import './CartItem.css'
 
 function CartItem({shoppingCart, setShoppingCart}) {
-    function handledelete(props){
-       const filtredCart = shoppingCart.filter(
-            item => (item.itemId!== props)
-        );
-        setShoppingCart(filtredCart);
+    function handledelete(){
+       const emptyCart = {
+        ...shoppingCart,
+        amount: 0
+        };
+        setShoppingCart(emptyCart);
     }
 
   return (
@@ -15,14 +15,17 @@ function CartItem({shoppingCart, setShoppingCart}) {
         <p className='cart-title'>Cart</p>
         <hr />
         <div className='cart-items-container'>
-            {shoppingCart.map((item) =>
-            <div key={item.itemId}>
-            <img src={item.image} alt="product" />
-            <p>{item.name}</p>
-            <span>{item.price}</span><span>x{item.number}</span>
-            <p>{item.price * item.number}</p>
-            <button onClick={()=> handledelete(item.itemId)}>delete</button></div>
-            )}
+            {shoppingCart.amount === 0
+            ? 
+            <div key={shoppingCart.itemId}>
+            <img src={shoppingCart.image} alt="product" />
+            <p>{shoppingCart.name}</p>
+            <span>{shoppingCart.price}</span><span> x {shoppingCart.number}</span>
+            <p>{shoppingCart.price * shoppingCart.number}</p>
+            <button onClick={()=> handledelete(shoppingCart.itemId)}>delete</button></div>
+            :
+            <p className='empty-cart'>Your cart is empty</p>
+            }
         </div>
     </div>
   )

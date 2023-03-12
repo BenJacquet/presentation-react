@@ -19,12 +19,11 @@ const Quantity = ({shoppingCart, setShoppingCart}) => {
   }
 
   function handleAddToCart() {
-    const updatedCart = shoppingCart.map(item => {
-      return {
-        ...item,
-        number: item.number + itemQuantity
+    const updatedCart = 
+      {
+        ...shoppingCart,
+        number: shoppingCart.number + itemQuantity
       };
-  });
   setShoppingCart(updatedCart);
   setItemQuantity(0);
   }
