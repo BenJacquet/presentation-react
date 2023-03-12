@@ -1,5 +1,7 @@
+import './Description.css'
+
 import React from 'react'
-import Quantity from './Quantity'
+import Quantity from '../quantity/Quantity'
 
 const Description = () => {
   return (
