@@ -19,12 +19,13 @@ const Quantity = ({shoppingCart, setShoppingCart}) => {
   }
 
   function handleAddToCart() {
-    setShoppingCart([
-      shoppingCart.map( item => {
-        item.number += itemQuantity;
-      })
-    ]);
-    setItemQuantity(0);
+    if (itemQuantity > 0) { 
+      const newCart = shoppingCart.map( item => {
+        item.number = item.number + itemQuantity
+      setShoppingCart(newCart);
+      setItemQuantity(0);
+      });
+    }
   }
 
   return (
