@@ -1,4 +1,50 @@
+.item-description-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .item-brand {
     color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+.item-name {
+}
+
+.item-description {
+    width: 30%;
+    color: var(--color-dark-grayish-blue);
+}
+
+.discount-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discounted-price {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.discount-percent-container {
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-primary-variant);
+    width: max-content;
+    height: max-content;
+    border-radius: 4px;
+}
+
+.discount-percent {
+    font-size: 1rem;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: var(--color-primary);
+}
+
+.retail-price {
+    font-size: 0.85rem;
+    color: var(--color-grayish-blue);
     font-weight: var(--font-weight-bold);
 }
