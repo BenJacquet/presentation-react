@@ -1,0 +1,23 @@
+.Slider {
+    max-width:  700px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .Slider .slide {
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 400px;
+    width: 100%;
+  }
+  
+  .Slider .slide img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    align-self: center;
+  }
+  

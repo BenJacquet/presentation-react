@@ -1,11 +1,9 @@
-import NavBar from "./components/NavBar";
-import Avatar from "../images/Avatar.png"
+import Carousel from "./components/Carousel";
 
 const ProductPage = () => {
     return (
         <div>
-            <NavBar />
-            <img src={Avatar} alt="hello" />
+            <Carousel />
         </div>
     )
 }
