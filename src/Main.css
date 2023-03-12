@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --color-primary: hsl(26, 100%, 55%);
+    --color-primary-variant: hsl(25, 100%, 94%);
+
+    --color-dark-blue: hsl(220, 13%, 13%);
+    --color-dark-grayish-blue: hsl(219, 9%, 45%);
+    --color-grayish-blue: hsl(220, 14%, 75%);
+    --color-ligh-grayish-blue: hsl(223, 64%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-black-lightbox: hsl(0, 0%, 0%, 75%);
+
+    --font-size-paragraph: 16px;
+    --font-weight-regular: 400;    
+    --font-weight-bold: 700;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: var(--font-weight-regular);
+}
