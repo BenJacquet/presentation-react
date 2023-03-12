@@ -22,14 +22,25 @@ module.exports = {
     // exclude node_modules
     rules: [
       {
-        test: /\.(js|jsx)$/,         // <-- added `|jsx` here
+        test: /\.(js|jsx)$/,         // <-- added `|jsx and images` here
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
       },
     ],
   },
   // pass all js files through Babel
   resolve: {
-    extensions: ["*", ".js", ".jsx"],    // <-- added `.jsx` here
+    extensions: ["*", ".js", ".jsx", ".png", ".jpg", ".jpeg", ".gif"],    // <-- added `.jsx` here
   },
 };
