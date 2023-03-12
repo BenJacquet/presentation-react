@@ -2,7 +2,7 @@ import './Main.css';
 
 import NavBar from "./components/NavBar";
 import Avatar from "../images/Avatar.png";
-import Description from "./components/Description";
+import Description from "./components/description/Description";
 
 const ProductPage = () => {
     return (

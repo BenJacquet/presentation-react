@@ -21,9 +21,3 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: var(--font-weight-regular);
 }
-
-.item-brand {
-    background-color: red;
-    /* color: var(--color-primary); */
-    font-weight: var(--font-weight-bold);
-}
