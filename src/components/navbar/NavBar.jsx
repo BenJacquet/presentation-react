@@ -1,11 +1,7 @@
-import React, { useState } from 'react'
-import CartIcon from '../../IconComponents/CartIcon'
-import Avatar from "../../../images/Avatar.png"
-import CartItem from '../cartitem/CartItem'
+import Cart from '../cart/Cart'
 import './NavBar.css'
 
 const NavBar = ({shoppingCart, setShoppingCart}) => {
-  const [cart, setCart] = useState(false);
   return (
     <div>
         <nav>
@@ -16,14 +12,10 @@ const NavBar = ({shoppingCart, setShoppingCart}) => {
             <a href='#'>Women</a>
             <a href='#'>About</a>
             <a href='#'>Contact</a>
-            <div className='menu-container'>
-              <CartIcon onSmash= {()=> setCart(!cart)}/> {shoppingCart.number > 0 && <sup>{shoppingCart.number}</sup>}
-              <img className='avatar' src={Avatar} alt="hello" />
-            </div>
+            <Cart shoppingCart={shoppingCart} setShoppingCart={setShoppingCart}/>
           </div>
-        <hr />
+          <hr />
         </nav>
-        {cart && <CartItem shoppingCart={shoppingCart} />}
     </div>
   )
 }
