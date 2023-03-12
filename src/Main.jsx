@@ -13,7 +13,7 @@ const ProductPage = () => {
         image : ItemIMG,
         name : 'Fall Limited Edition Sneakers',
         price : 125,
-        number : 0,
+        number : 1,
     }])
 
     return (

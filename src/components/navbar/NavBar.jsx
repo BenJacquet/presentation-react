@@ -18,7 +18,7 @@ const NavBar = ({shoppingCart, setShoppingCart}) => {
             <a href='#'>About</a>
             <a href='#'>Contact</a>
             <div className='menu-container'>
-              <CartIcon onSmash= {()=> setCart(!cart)}/> <span>{shoppingCart.length}</span>
+              <CartIcon onSmash= {()=> setCart(!cart)}/> {shoppingCart.length > 0 && <span>{shoppingCart.length}</span>}
               <img className='avatar' src={Avatar} alt="hello" />
             </div>
           </div>
