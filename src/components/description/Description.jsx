@@ -19,7 +19,7 @@ const Description = ({shoppingCart, setShoppingCart}) => {
         </div>
         <s className='retail-price'>$250.00</s>
       </div>
-      <Quantity shoppingCart={shoppingCart} />
+      <Quantity shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
     </div>
   )
 }
