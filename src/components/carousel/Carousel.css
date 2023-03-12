@@ -1,23 +1,38 @@
 .Slider {
-    max-width:  700px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  
-  .Slider .slide {
+    max-width: 30%;
     justify-content: center;
     align-items: center;
     background-color: #eee;
     height: 400px;
     width: 100%;
+    border-radius: 12px;
   }
   
-  .Slider .slide img {
+  .Slider img {
     display: flex;
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     align-self: center;
+    border: none;
+    border-radius: 12px;
   }
   
+  .carousel .thumb.selected, .carousel .thumb:hover {
+    border: none; }
+
+  .carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    overflow: hidden; }
+    .carousel.carousel-slider .control-arrow {
+      top: 0;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      margin-top: 0;
+      padding: 5px; }
+      .carousel.carousel-slider .control-arrow:hover {
+        background: transparent; 
+  }

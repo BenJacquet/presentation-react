@@ -22,9 +22,9 @@ const NavBar = () => {
               <img className='avatar' src={Avatar} alt="hello" />
             </div>
           </div>
+        <hr />
         </nav>
         {cart && <Cart />}
-        <hr />
     </div>
   )
 }

@@ -10,10 +10,12 @@
 }
 
 .item-name {
+    font-size: 2rem;
+    width: 50%;
 }
 
 .item-description {
-    width: 30%;
+    width: 60%;
     color: var(--color-dark-grayish-blue);
 }
 

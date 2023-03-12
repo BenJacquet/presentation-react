@@ -29,5 +29,17 @@
 }
 
 .avatar {
-    height: 64px;
+    height: 48px;
+}
+
+hr {
+    width: 78%;
+    border: 1px solid var(--color-light-grayish-blue);
+    margin-top: 24px;
+    margin-bottom: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark-grayish-blue);
 }
