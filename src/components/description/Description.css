@@ -1,12 +1,12 @@
 .item-description-container {
     display: flex;
     flex-direction: column;
-
 }
 
 .item-brand {
     color: var(--color-primary);
     font-weight: var(--font-weight-bold);
+    letter-spacing: 3px;
 }
 
 .item-name {
