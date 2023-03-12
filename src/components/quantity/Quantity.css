@@ -1,0 +1,15 @@
+.quantity-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    height: max-content;
+    gap: 32px;
+    background-color: var(--color-light-grayish-blue);
+}
+
+.minus, .amount, .plus {
+    align-self: center;
+    justify-self: center;
+}
