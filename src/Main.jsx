@@ -5,10 +5,9 @@ import Description from "./components/description/Description";
 const ProductPage = () => {
     return (
         <div>
-            <Carousel />
             <NavBar />
+            <Carousel />
             <Description/>
-
         </div>
     )
 }
