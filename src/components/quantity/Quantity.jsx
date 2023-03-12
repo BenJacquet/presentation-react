@@ -1,20 +1,30 @@
 import React from 'react'
 import './Quantity.css'
+
+import { useState } from 'react';
 import minus from '../../../images/icon-minus.svg';
 import plus from '../../../images/icon-plus.svg';
 import cartIcon from '../../../images/icon-cart-white.svg';
 
-const Quantity = ({shoppingCart}) => {
+const Quantity = ({shoppingCart, setShoppingCart}) => {
+  const [itemQuantity, setItemQuantity] = useState(0);
+
   function handleDecreaseQuantity() {
-    return (0);
+    if (itemQuantity > 0)
+      setItemQuantity(itemQuantity - 1);
   }
 
   function handleIncreaseQuantity() {
-    return (0);
+    setItemQuantity(itemQuantity + 1);
   }
 
   function handleAddToCart() {
-    return (0);
+    setShoppingCart([
+      shoppingCart.map( item => {
+        item.number += itemQuantity;
+      })
+    ]);
+    setItemQuantity(0);
   }
 
   return (
@@ -24,7 +34,7 @@ const Quantity = ({shoppingCart}) => {
             <img src={minus} alt="minus" />
           </button>
 
-          <span className='amount'>0</span>
+          <span className='amount'>{itemQuantity}</span>
           
           <button onClick={handleIncreaseQuantity} className='plus'>
             <img src={plus} alt="plus" />
