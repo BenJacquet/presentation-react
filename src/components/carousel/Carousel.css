@@ -56,6 +56,6 @@
     transition: ease-in;
     display: inline-block;
     white-space: nowrap;
-    overflow: scroll;
+    overflow: hidden;
     border: none;
   }

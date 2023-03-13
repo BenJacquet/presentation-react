@@ -21,7 +21,7 @@ function Cart({shoppingCart, setShoppingCart}) {
                     <img src={shoppingCart.image} alt="product" />
                     <p>{shoppingCart.name}</p>
                     <span>{shoppingCart.price}</span><span> x {shoppingCart.number}</span>
-                    <p>{shoppingCart.price * shoppingCart.number}</p>
+                    <p>${shoppingCart.price * shoppingCart.number}</p>
                     <button onClick={handleDelete}>delete</button>
                 </div>
             );
